@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="javascript-arrays-bandas-musica.css">
+    <title>Crea tu playlist</title>
+</head>
+<body>
+    
+    <div class="datos">
+        <h1>¡Crea tu playlist personalizada!</h1>
+
+        <label for="grupoMusica">Introduce 5 artistas que te gusten y crea tu playlist personalizada.</label>
+        <input type="text" name="grupoMusica" id="grupoMusica" placeholder="Introduce aquí un grupo de música">
+
+        <input type="button" id= "anyadir" value="Añadir" onclick="añadir()">
+
+        <div class="error-5">
+            <p>¡Ya has llegado al limite de 5 artistas!</p>
+        </div>
+
+        <input type="button" id= "crear" value="Crear" onclick="crear()">
+    </div>
+
+    <div class="playlist"></div>
+
+    <div class="demas">
+        <input type="button" id= "anyadirmas" value="Añadir más" onclick="anyadirMas()">
+        <input type="text" name="nuevoArtista" id="nuevoArtista" placeholder="Introduce aquí otro grupo de música">
+        <input type="button" id= "borrar1" value="Borrar el primero" onclick="borrar()">
+        <input type="button" id= "borrar2" value="Borrar el último" onclick="borrarUltimo()">
+    </div>
+
+    <script src="javascript-arrays-bandas-musica.js"></script>
+</body>
+</html>
